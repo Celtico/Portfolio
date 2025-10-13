@@ -10,11 +10,22 @@
     <header class="hero">
       <nav class="hero__nav">
         <a class="nav__logo" href="#inicio">Cel Ticó Petit</a>
-        <ul class="nav__links">
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+        <div class="nav__actions">
+          <ul class="nav__links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Cambiar a modo oscuro"
+          >
+            <span aria-hidden="true">&#9788;</span>
+            <span aria-hidden="true">&#9789;</span>
+          </button>
+        </div>
       </nav>
       <section id="inicio" class="hero__content">
         <p class="hero__kicker">Diseñadora y desarrolladora front-end</p>
@@ -108,10 +119,15 @@
       <div class="footer__inner">
         <p>&copy; <span id="year"></span> Cel Ticó Petit. Hecho con cariño.</p>
         <div class="footer__links">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+          <a
+            href="https://www.linkedin.com/in/celesti-tico-petit/"
+            target="_blank"
+            rel="noreferrer"
             >LinkedIn</a
           >
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Celtico/" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
         </div>
       </div>
     </footer>
