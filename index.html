@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cel Ticó Petit | Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="hero__nav">
+        <a class="nav__logo" href="#inicio">Cel Ticó Petit</a>
+        <ul class="nav__links">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <section id="inicio" class="hero__content">
+        <p class="hero__kicker">Diseñadora y desarrolladora front-end</p>
+        <h1>Hola, soy Cel Ticó Petit.</h1>
+        <p>
+          Ayudo a equipos a convertir ideas en experiencias digitales simples,
+          accesibles y con impacto positivo para las personas.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contacto">Colaboremos</a>
+          <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="sobre-mi" class="section section--light">
+        <div class="section__inner">
+          <h2>Sobre mí</h2>
+          <p>
+            Combino diseño UI/UX con desarrollo front-end para crear productos
+            agradables, inclusivos y medibles. Me entusiasma trabajar con
+            equipos multidisciplinarios, prototipar rápido y iterar con datos.
+          </p>
+          <ul class="pill-list">
+            <li>Diseño de interfaces</li>
+            <li>HTML + CSS modernos</li>
+            <li>JavaScript</li>
+            <li>Accesibilidad</li>
+            <li>Design systems</li>
+            <li>Investigación con usuarios</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="section__inner">
+          <h2>Proyectos destacados</h2>
+          <div class="projects">
+            <article class="project-card">
+              <h3>Producto estrella</h3>
+              <p>
+                Descripción breve del proyecto, la problemática y el impacto
+                logrado. Reemplaza este texto con tu caso real.
+              </p>
+              <ul class="project-card__meta">
+                <li>2023</li>
+                <li>Rol: Lead UI/UX</li>
+                <li>Stack: Figma, React</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="link" href="#" aria-disabled="true">Ver estudio de caso</a>
+                <a class="link" href="#" aria-disabled="true">GitHub</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Dashboard accesible</h3>
+              <p>
+                Explica brevemente el objetivo, las métricas clave y la
+                solución. Añade enlaces reales a demo o repositorio.
+              </p>
+              <ul class="project-card__meta">
+                <li>2022</li>
+                <li>Rol: Front-end</li>
+                <li>Stack: Next.js, TypeScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="link" href="#" aria-disabled="true">Ver demo</a>
+                <a class="link" href="#" aria-disabled="true">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section section--accent">
+        <div class="section__inner">
+          <h2>¿Trabajamos juntos?</h2>
+          <p>
+            Escríbeme para conversar sobre proyectos, colaboraciones o charlas.
+          </p>
+          <a class="btn btn--inverted" href="mailto:celticopetit@gmail.com"
+            >Enviar correo</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p>&copy; <span id="year"></span> Cel Ticó Petit. Hecho con cariño.</p>
+        <div class="footer__links">
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
