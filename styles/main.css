@@ -2,8 +2,11 @@
   color-scheme: light;
   --color-bg: #f8f7f4;
   --color-text: #1f1f1f;
-  --color-muted: #555;
-  --color-primary: #4b6bfb;
+  --color-muted: #3f3f46;
+  --color-primary: #2430a3;
+  --color-primary-contrast: #ffffff;
+  --color-primary-soft: rgba(36, 48, 163, 0.12);
+  --shadow-primary: rgba(36, 48, 163, 0.25);
   --color-accent: var(--color-surface);
   --color-surface: #ffffff;
   --color-border: rgba(0, 0, 0, 0.05);
@@ -22,8 +25,11 @@ body[data-theme="dark"] {
   color-scheme: dark;
   --color-bg: #101013;
   --color-text: #f2f2f7;
-  --color-muted: #b8b9c7;
-  --color-primary: #8ba6ff;
+  --color-muted: #c7c9d9;
+  --color-primary: #9fb4ff;
+  --color-primary-contrast: #0c0c10;
+  --color-primary-soft: rgba(159, 180, 255, 0.22);
+  --shadow-primary: rgba(159, 180, 255, 0.3);
   --color-accent: var(--color-surface);
   --color-surface: #1b1b21;
   --color-border: rgba(255, 255, 255, 0.08);
@@ -200,16 +206,17 @@ p {
 .btn:hover,
 .btn:focus {
   transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(75, 107, 251, 0.2);
+  box-shadow: 0 12px 24px var(--shadow-primary);
 }
 
 .btn--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-primary-contrast);
+  border-color: var(--color-primary);
 }
 
 .btn--ghost {
-  background: transparent;
+  background: var(--color-primary-soft);
   border-color: var(--color-primary);
   color: var(--color-primary);
 }
@@ -256,7 +263,7 @@ p {
 }
 
 .pill-list li {
-  background: rgba(75, 107, 251, 0.1);
+  background: var(--color-primary-soft);
   color: var(--color-primary);
   padding: 0.5rem 1rem;
   border-radius: 999px;
