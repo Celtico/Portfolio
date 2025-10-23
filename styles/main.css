@@ -261,6 +261,14 @@ p {
   gap: var(--space-xs);
 }
 
+.project-card__image {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  object-fit: cover;
+  max-height: 14rem;
+}
+
 .project-card__meta {
   list-style: none;
   display: flex;
