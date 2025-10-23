@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cel Ticó Petit | Portfolio</title>
+    <title>Proyectos | Cel Ticó Petit</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <header class="hero">
+    <header class="hero hero--subpage">
       <nav class="hero__nav">
-        <a class="nav__logo" href="#inicio">Cel Ticó Petit</a>
+        <a class="nav__logo" href="index.html#inicio">Cel Ticó Petit</a>
         <div class="nav__actions">
           <ul class="nav__links">
-            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="index.html#sobre-mi">Sobre mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
@@ -27,45 +27,23 @@
           </button>
         </div>
       </nav>
-      <section id="inicio" class="hero__content">
+      <section id="inicio" class="hero__content hero__content--subpage">
         <p class="hero__kicker">Diseñadora y desarrolladora front-end & backend</p>
-        <h1>Hola, soy Cel Ticó Petit.</h1>
+        <h1>Todos los proyectos</h1>
         <p>
-          Ayudo a equipos a convertir ideas en experiencias digitales simples,
-          accesibles y con impacto positivo para las personas.
+          Una selección completa de productos digitales en los que he colaborado.
+          Incluye los proyectos destacados y otras iniciativas en fases de
+          exploración o experimentación.
         </p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#contacto">Colaboremos</a>
-          <a class="btn btn--ghost" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--primary" href="#contacto">Hablemos</a>
+          <a class="btn btn--ghost" href="index.html">Volver al inicio</a>
         </div>
       </section>
     </header>
 
     <main>
-      <section id="sobre-mi" class="section section--light">
-        <div class="section__inner">
-          <h2>Sobre mí</h2>
-          <p>
-            Combino diseño UI/UX con desarrollo front-end y backend para crear
-            productos agradables, inclusivos y medibles. Trabajo con Next.js,
-            APIs personalizadas y frameworks PHP como Laminas &amp; Mezzio para
-            entregar soluciones completas. También colaboro con React, React
-            Native, JavaFX y otras tecnologías según el reto. Me entusiasma
-            colaborar con equipos multidisciplinarios, prototipar rápido e
-            iterar con datos reales.
-          </p>
-          <ul class="pill-list">
-            <li>Diseño de interfaces</li>
-            <li>HTML + CSS modernos</li>
-            <li>JavaScript</li>
-            <li>Accesibilidad</li>
-            <li>Design systems</li>
-            <li>Investigación con usuarios</li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="proyectos" class="section">
+      <section id="proyectos" class="section section--light">
         <div class="section__inner">
           <h2>Proyectos destacados</h2>
           <div class="projects">
@@ -87,7 +65,11 @@
                 <li>Stack: TensorFlow.js, React, WebGL</li>
               </ul>
               <div class="project-card__actions">
-                <a class="link" href="https://proto.serverscel.com/app" target="_blank" rel="noreferrer"
+                <a
+                  class="link"
+                  href="https://proto.serverscel.com/app"
+                  target="_blank"
+                  rel="noreferrer"
                   >Ver demo</a
                 >
                 <a class="link" href="#" aria-disabled="true">GitHub</a>
@@ -229,10 +211,66 @@
                 <a class="link" href="#" aria-disabled="true">GitHub</a>
               </div>
             </article>
-
           </div>
-          <div class="projects__cta">
-            <a class="btn btn--ghost" href="proyectos.html">Ver más proyectos</a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <h2>Más trabajos y experimentos</h2>
+          <p>
+            Una mezcla de prototipos, componentes y colaboraciones internas que
+            siguen en evolución. Se pueden personalizar según la necesidad del
+            proyecto.
+          </p>
+          <div class="projects">
+            <article class="project-card">
+              <h3>Motion Insights</h3>
+              <p>
+                Panel de analítica para sensores IoT con visualizaciones en
+                tiempo real y alertas inteligentes.
+              </p>
+              <ul class="project-card__meta">
+                <li>2021</li>
+                <li>Rol: UI/UX</li>
+                <li>Stack: Figma, D3.js</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="link" href="#" aria-disabled="true">Solicitar demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>EduFlow</h3>
+              <p>
+                Plataforma modular para academias online con gestión de cursos,
+                pagos y métricas de aprendizaje.
+              </p>
+              <ul class="project-card__meta">
+                <li>2020</li>
+                <li>Rol: Front-end</li>
+                <li>Stack: React, Node.js</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="link" href="#" aria-disabled="true">Solicitar demo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Studio Tools</h3>
+              <p>
+                Biblioteca interna de componentes reutilizables para acelerar la
+                construcción de dashboards corporativos.
+              </p>
+              <ul class="project-card__meta">
+                <li>2019</li>
+                <li>Rol: Lead UI</li>
+                <li>Stack: Storybook, TypeScript</li>
+              </ul>
+              <div class="project-card__actions">
+                <a class="link" href="#" aria-disabled="true">Solicitar demo</a>
+              </div>
+            </article>
           </div>
         </div>
       </section>

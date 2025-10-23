@@ -64,6 +64,10 @@ a:focus {
   background: var(--color-hero-bg);
 }
 
+.hero--subpage {
+  min-height: auto;
+}
+
 .hero__nav {
   display: flex;
   justify-content: space-between;
@@ -72,6 +76,11 @@ a:focus {
   max-width: var(--max-width);
   margin: 0 auto;
   width: 100%;
+}
+
+.hero__content--subpage {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
 }
 
 .nav__actions {
@@ -129,6 +138,10 @@ body[data-theme="dark"] .theme-toggle span:first-child {
 
 body[data-theme="dark"] .theme-toggle span:last-child {
   display: inline;
+}
+
+.hero--subpage .hero__content {
+  flex: 0;
 }
 
 .hero__content {
@@ -254,6 +267,12 @@ p {
   display: grid;
   gap: var(--space-sm);
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.projects__cta {
+  margin-top: var(--space-sm);
+  display: flex;
+  justify-content: center;
 }
 
 .project-card {

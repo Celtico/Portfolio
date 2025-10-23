@@ -5,6 +5,7 @@ Sitio estático minimalista para presentar la información profesional de Cel Ti
 ## Contenido inicial
 
 - `index.html`: estructura HTML con secciones de presentación, proyectos y contacto.
+- `proyectos.html`: listado extendido de proyectos con tarjetas reutilizables.
 - `styles/main.css`: estilos base con tipografía y diseño responsivo.
 - `assets/`: espacio reservado para imágenes o descargas futuras.
 
